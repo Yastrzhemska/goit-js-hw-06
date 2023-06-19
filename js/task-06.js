@@ -7,7 +7,7 @@ console.log(length);
 
 
 function inputBlurHandler() {
-    const inputLength = input.value.length;
+    const inputLength = input.value.trim().length;
     if (Number(inputLength) === Number(length)) {
         input.classList.remove('invalid')
         input.classList.add('valid')
