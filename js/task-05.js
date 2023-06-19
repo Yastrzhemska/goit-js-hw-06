@@ -4,13 +4,14 @@ console.log(textInput);
 const textTitle = document.querySelector('#name-output');
 console.log(textTitle);
 
+
 textInput.addEventListener('input', (evt) => {
- if (textInput.value) {
-    result = textTitle.textContent = evt.currentTarget.value;
- }
- else {
-     result = textTitle.textContent = "Anonymous";
- }
+    if (textInput.value) {
+    textTitle.textContent = evt.currentTarget.value;
+}
+else {
+    textTitle.textContent = "Anonymous";
+}
     
 }
 );
