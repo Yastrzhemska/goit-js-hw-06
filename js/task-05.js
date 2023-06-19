@@ -6,7 +6,8 @@ console.log(textTitle);
 
 
 textInput.addEventListener('input', (evt) => {
-    if (textInput.value) {
+    const imputValue = textInput.value.trim();
+    if (imputValue) {
     textTitle.textContent = evt.currentTarget.value;
 }
 else {
